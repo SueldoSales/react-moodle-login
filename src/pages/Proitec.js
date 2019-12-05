@@ -19,13 +19,23 @@ class Proitec extends Component {
               </div>
               <div className="group">
                   {
+                    this.props.error==='1' ?
+                    <p>Infelizmente os cookies não estão habilitados no seu navegador.</p>
+                    : null
+                  }
+                  {
+                    this.props.error==='2' ?
+                    <p>O usuário pode conter somente caracteres alfanuméricos minúsculos.</p>
+                    : null
+                  }
+                  {
                     this.props.error==='3' ?
-                    <p>Mátricula ou senha incorretos, tente novamente</p>
+                    <p>Mátricula ou senha incorretos, tente novamente.</p>
                     : null
                   }
                   {
                     this.props.error==='4' ?
-                    <p>Sua sessão expirou, faça login novamente</p>
+                    <p>Sua sessão expirou, faça login novamente.</p>
                     : null
                   }
                   <a href="https://suap.ifrn.edu.br/comum/solicitar_trocar_senha/">esqueci minha senha</a>
@@ -43,7 +53,7 @@ class Proitec extends Component {
               </div>
           </form>
           <div id="instanciaMoodle">
-              <p><img id="logo" src="https://ead.ifrn.edu.br/ava/proitec2018/theme/boost_proitec/pix/proitec-logo.png" alt="Logo IFRN EaD" /></p>
+              <p><img id="logo" src="https://raw.githubusercontent.com/CoticEaDIFRN/moodle_theme_proitec/master/pix/proitec-logo.png" alt="Logo IFRN EaD" /></p>
               <hr width="80%" />
               <ul>
                   <li><a onClick={this.props.academicoBtn}>Acadêmico</a></li>

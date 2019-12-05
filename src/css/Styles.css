@@ -48,6 +48,10 @@ form {
 	margin-bottom: 45px; 
 }
 
+.group p {
+	color: #d32f2f;
+}
+
 .group h2 {
   text-align: center; 
   color: #113515;

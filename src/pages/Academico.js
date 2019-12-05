@@ -19,13 +19,23 @@ class Academico extends Component {
               </div>
               <div className="group">
                   {
+                    this.props.error==='1' ?
+                    <p>Infelizmente os cookies não estão habilitados no seu navegador.</p>
+                    : null
+                  }
+                  {
+                    this.props.error==='2' ?
+                    <p>O usuário pode conter somente caracteres alfanuméricos minúsculos.</p>
+                    : null
+                  }
+                  {
                     this.props.error==='3' ?
-                    <p>Mátricula ou senha incorretos, tente novamente</p>
+                    <p>Mátricula ou senha incorretos, tente novamente.</p>
                     : null
                   }
                   {
                     this.props.error==='4' ?
-                    <p>Sua sessão expirou, faça login novamente</p>
+                    <p>Sua sessão expirou, faça login novamente.</p>
                     : null
                   }
                   <a href="https://suap.ifrn.edu.br/comum/solicitar_trocar_senha/">esqueci minha senha</a>
