@@ -5,7 +5,7 @@ class Proitec extends Component {
     return (
       <div className="App" style={this.props.estado}>
         <div id="mainProitec">
-          <form method="post" action="https://ead.ifrn.edu.br/ava/proitec2018/login/index.php" role="form">
+          <form method="post" action="https://ead.ifrn.edu.br/ava/proitec2019/login/index.php" role="form">
               <div className="group">
                   <h2>PROITEC</h2>
               </div>
@@ -18,6 +18,16 @@ class Proitec extends Component {
                   <label>Senha</label>
               </div>
               <div className="group">
+                  {
+                    this.props.error==='3' ?
+                    <p>Mátricula ou senha incorretos, tente novamente</p>
+                    : null
+                  }
+                  {
+                    this.props.error==='4' ?
+                    <p>Sua sessão expirou, faça login novamente</p>
+                    : null
+                  }
                   <a href="https://suap.ifrn.edu.br/comum/solicitar_trocar_senha/">esqueci minha senha</a>
                   <br />
               </div>
@@ -27,8 +37,8 @@ class Proitec extends Component {
               <div id="instanciaMoodleResponsive">
                 <hr width="80%" />
                 <ul>
-                    <li><a onClick={this.props.academicoBtn}>Acadêmico</a></li>
-                    <li><a onClick={this.props.presencialBtn}>Presencial</a></li>
+                    <li><a className="plataforma" onClick={this.props.academicoBtn}>Acadêmico</a></li>
+                    <li><a className="plataforma" onClick={this.props.presencialBtn}>Presencial</a></li>
                 </ul>
               </div>
           </form>

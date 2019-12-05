@@ -227,6 +227,9 @@ input:focus ~ .highlight {
 
 .buttonBlue:hover { background: #5d81c1; }
 
+.plataforma {
+	cursor: pointer;
+}
 
 /* Ripples container */
 
@@ -324,6 +327,7 @@ input:focus ~ .highlight {
 #instanciaMoodle a {
 	text-decoration: none;
 	color: #3eb24f;
+	cursor: pointer;
 }
 
 #mainPresencial #instanciaMoodle a {

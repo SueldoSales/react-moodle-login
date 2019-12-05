@@ -18,6 +18,16 @@ class Academico extends Component {
                   <label>Senha</label>
               </div>
               <div className="group">
+                  {
+                    this.props.error==='3' ?
+                    <p>Mátricula ou senha incorretos, tente novamente</p>
+                    : null
+                  }
+                  {
+                    this.props.error==='4' ?
+                    <p>Sua sessão expirou, faça login novamente</p>
+                    : null
+                  }
                   <a href="https://suap.ifrn.edu.br/comum/solicitar_trocar_senha/">esqueci minha senha</a>
                   <br />
               </div>
@@ -27,13 +37,13 @@ class Academico extends Component {
               <div id="instanciaMoodleResponsive">
                 <hr width="80%" />
                 <ul>
-                    <li><a onClick={this.props.presencialBtn}>Presencial</a></li>
-                    <li><a onClick={this.props.proitecBtn}>PROITEC</a></li>
+                    <li><a className="plataforma" onClick={this.props.presencialBtn}>Presencial</a></li>
+                    <li><a className="plataforma" onClick={this.props.proitecBtn}>PROITEC</a></li>
                 </ul>
               </div>
           </form>
           <div id="instanciaMoodle">
-              <p><img id="logo" src="https://ead.ifrn.edu.br/ava/academico/theme/boost_eadifrn/pix/eadifrn-logo.svg" alt="Logo IFRN EaD" /></p>
+              <p><img id="logo" src="https://ead.ifrn.edu.br/ava/academico/theme/boost_eadifrn/pix/MarcaIFRNZL.svg" alt="Logo IFRN EaD" /></p>
               <hr width="80%" />
               <ul>
                   <li><a onClick={this.props.presencialBtn}>Presencial</a></li>
