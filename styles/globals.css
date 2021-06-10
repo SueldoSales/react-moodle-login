@@ -306,10 +306,6 @@ input:focus ~ .highlight {
   margin: 25% 0;
 }
 
-#mainProitec #logo {
-	width: 20%;
-}
-
 #instanciaMoodle ul {
 	display: flex;
 	flex-direction: row;
