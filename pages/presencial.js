@@ -21,7 +21,7 @@ export default function Presencial() {
   return (
     <div className="App">
         <div id="mainPresencial">
-          <form method="post" action="https://ead.ifrn.edu.br/portal/wp-content/uploads/2019/04/MarcaIFRN_ZL.png" role="form">
+          <form method="post" action="https://presencial.ava.ifrn.edu.br/login/index.php" role="form">
               <div className="group">
                   <h2>PRESENCIAL</h2>
               </div>
