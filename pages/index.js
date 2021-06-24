@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Home() {
 
@@ -19,7 +20,14 @@ export default function Home() {
   }
 
   return (
-    <div className="App">
+    <>
+
+      <Head>
+        <title>Login Moodle Acadêmico</title>
+        <meta name="description" content="Entre na plataforma Moodle Acadêmico do IFRN"></meta>
+      </Head>
+
+      <div className="App">
         <div id="main">
           <form method="post" action="https://ead.ifrn.edu.br/ava/academico/login/index.php" role="form">
               <div className="group">
@@ -78,5 +86,6 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </>
   )
 }

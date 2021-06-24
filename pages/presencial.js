@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Presencial() {
 
@@ -19,7 +20,14 @@ export default function Presencial() {
   }
 
   return (
-    <div className="App">
+    <>
+
+      <Head>
+        <title>Login Moodle Presencial</title>
+        <meta name="description" content="Entre na plataforma Moodle Presencial do IFRN"></meta>
+      </Head>
+
+      <div className="App">
         <div id="mainPresencial">
           <form method="post" action="https://presencial.ava.ifrn.edu.br/login/index.php" role="form">
               <div className="group">
@@ -78,5 +86,6 @@ export default function Presencial() {
           </div>
         </div>
       </div>
+    </>
   )
 }

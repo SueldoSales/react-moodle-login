@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Proitec() {
 
@@ -19,7 +20,14 @@ export default function Proitec() {
   }
 
   return(
-    <div className="App">
+    <>
+
+      <Head>
+        <title>Login Moodle Proitec</title>
+        <meta name="description" content="Entre na plataforma Moodle Proitec do IFRN"></meta>
+      </Head>
+
+      <div className="App">
         <div id="mainProitec">
           <form method="post" action="https://ead.ifrn.edu.br/ava/proitec2019/login/index.php" role="form">
               <div className="group">
@@ -78,5 +86,6 @@ export default function Proitec() {
           </div>
         </div>
       </div>
+    </>
   )
 }
