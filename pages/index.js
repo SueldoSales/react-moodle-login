@@ -35,11 +35,11 @@ export default function Home() {
               </div>
               <div className="group">
                   <input id="text" type="text" className="form-control" required type="text" name="username" onBlur={(event) => blurText(event)} /><span className="highlight"></span><span className="bar"></span>
-                  <label>Matrícula</label>
+                  <label htmlFor="text">Matrícula</label>
               </div>
               <div className="group">
                   <input id="password" className="form-control" type="password" name="password" onBlur={(event) => blurPassword(event)} /><span className="highlight"></span><span className="bar"></span>
-                  <label>Senha</label>
+                  <label htmlFor="password">Senha</label>
               </div>
               <div className="group">
                   {
