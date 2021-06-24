@@ -62,7 +62,7 @@ form {
 }
 
 .group a {
-  color: #3eb24f;
+  color: #358040;
   font-weight: bold;
   text-decoration: none;
 }
@@ -90,7 +90,7 @@ input:focus { outline: none; }
 /* Label */
 
 label {
-	color: #86919a;
+	color: #717171;
 	font-size: 18px;
 	font-weight: bold;
 	position: absolute;
@@ -326,12 +326,8 @@ input:focus ~ .highlight {
 
 #instanciaMoodle a {
 	text-decoration: none;
-	color: #3eb24f;
+	color: #f7f7f7;
 	cursor: pointer;
-}
-
-#mainPresencial #instanciaMoodle a {
-	color: #6e9bdb;
 }
 
 #instanciaMoodle a:hover {
